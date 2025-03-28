@@ -1,11 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Tutor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="quran-image">
+            <img src="https://cdn.islamic.network/quran/images/high-resolution/106_1.png" alt="Quran Page">
+            <img src="https://cdn.islamic.network/quran/images/high-resolution/106_2.png" alt="Quran Page">
+        </div>
+        <div id="surah-container"></div>
+
+        <div class="audio-recorder">
+            <canvas id="audioVisualizer"></canvas>
+            <div class="controls">
+                <button id="recordButton">Record</button>
+                <button id="playButton" disabled>Play</button>
+                <button id="stopButton" disabled>Stop</button>
+            </div>
+            <audio id="audioPlayback" controls hidden></audio>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arabic Tutor</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+    <div class="container">
+        <!-- Quran Display (as before) -->
+        <div id="quran-image">
+            <img src="https://cdn.islamic.network/quran/images/high-resolution/106_1.png" alt="Quran Page">
+            <img src="https://cdn.islamic.network/quran/images/high-resolution/106_2.png" alt="Quran Page">
+        </div>
+        <div id="surah-container"></div>
+
+        <!-- Audio Recorder Controls -->
+        <div class="audio-recorder">
+            <h3>Record Yourself</h3>
+            <canvas id="audioVisualizer"></canvas>
+            <div class="controls main-controls"> 
+                <button id="recordButton">Record</button>
+                <button id="stopButton" disabled>Stop</button>
+
+            </div>
+            <audio id="audioPlayback" controls hidden></audio>
+
+             <div class="recordings-section">
+                <h4>Your Recordings</h4>
+                <ul id="recordingsList">
+
+                     <li class="no-recordings">No recordings yet.</li>
+                </ul>
+             </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
